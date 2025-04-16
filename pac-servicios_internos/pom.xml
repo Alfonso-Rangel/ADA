@@ -11,21 +11,9 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>pac-productos</artifactId>
+    <artifactId>pac-servicios_internos</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>com.uam</groupId>
-            <artifactId>pac-base_datos</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.uam</groupId>
-            <artifactId>pac-usuarios</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

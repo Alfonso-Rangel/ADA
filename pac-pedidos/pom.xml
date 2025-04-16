@@ -11,18 +11,24 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>pac-productos</artifactId>
+    <artifactId>pac-pedidos</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>com.uam</groupId>
-            <artifactId>pac-base_datos</artifactId>
+            <artifactId>pac-compras</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>com.uam</groupId>
-            <artifactId>pac-usuarios</artifactId>
+            <artifactId>pac-productos</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.uam</groupId>
+            <artifactId>pac-servicios_externos</artifactId>
             <version>1.0.0</version>
         </dependency>
 

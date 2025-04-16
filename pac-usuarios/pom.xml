@@ -11,7 +11,7 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>pac-productos</artifactId>
+    <artifactId>pac-usuarios</artifactId>
 
     <dependencies>
         <dependency>
@@ -22,7 +22,13 @@
 
         <dependency>
             <groupId>com.uam</groupId>
-            <artifactId>pac-usuarios</artifactId>
+            <artifactId>pac-servicios_externos</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.uam</groupId>
+            <artifactId>pac-servicios_internos</artifactId>
             <version>1.0.0</version>
         </dependency>
 
