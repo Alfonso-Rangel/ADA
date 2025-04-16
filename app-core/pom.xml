@@ -24,6 +24,13 @@
             <artifactId>pac-productos</artifactId>
             <version>1.0.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.uam</groupId>
+            <artifactId>pac-pedidos</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>

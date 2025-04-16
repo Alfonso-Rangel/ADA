@@ -17,6 +17,7 @@
         <module>pac-productos</module>
         <module>pac-servicios_externos</module>
         <module>pac-servicios_internos</module>
+        <module>pac-soporte</module>
         <module>pac-usuarios</module>
         <module>app-core</module>
     </modules>
