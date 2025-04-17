@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Vista Principal - PAC ADA</title>
+</head>
+<body>
+    <h1>Pruebas de Comunicación entre PACs</h1>
+
+    <button onclick="enviarDatos('compras')">Prueba de Compras</button>
+    <button onclick="enviarDatos('pedidos')">Prueba de Pedidos</button>
+    <button onclick="enviarDatos('productos')">Prueba de Productos</button>
+    <button onclick="enviarDatos('soporte')">Prueba de Soporte</button>
+    <button onclick="enviarDatos('usuarios')">Prueba de Usuarios</button>
+
+    <div id="resultado" style="margin-top:20px; font-weight:bold;"></div>
+
+    <script>
+        async function enviarDatos(ruta) {
+            // Crear objeto, que será enviado al backend como JSON
+            const datos = {
+                atributo1: "Hola desde el pac de ",
+                atributo2: ruta
+            };
+
+            // Enviar al backend
+            try {
+                const response = await fetch('http://localhost:8080/' + ruta + '/test', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(datos) 
+                });
+                
+                document.getElementById('resultado').innerText = await response.text();
+                
+            } catch (error) {
+                document.getElementById('resultado').innerText = 'Error: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
