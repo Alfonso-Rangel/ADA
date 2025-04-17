@@ -1,0 +1,9 @@
+abstraccion\IUPago.class
+controlador\ControllerCompras.class
+abstraccion\ComprobantePago.class
+abstraccion\PagoProxy.class
+abstraccion\GestordeCompras.class
+abstraccion\PagoReal.class
+controlador\ControllerCompras$EjemploObjeto.class
+abstraccion\Main.class
+abstraccion\Pago.class
