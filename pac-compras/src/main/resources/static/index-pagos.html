@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADA</title>
+    <link rel="icon" href="../../../../../app-core/src/main/resources/static/images/logoAndaia.png" />
+    <link rel="stylesheet" type="text/css" href="css/style-pagos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="checkoutLayout">
+        <div class="returnCart">
+          <a href="/index.html"> Seguir comprando </a>
+          <h1>Productos en el carrito</h1>
+          <div class="list">
+            <div class="item">
+              <img src="../../../../../app-core/src/main/resources/static/images/tops/1.5 sueteres/1.5.1.jpeg" />
+              <div class="info">
+                <div class="name">Producto 1</div>
+                <div class="price">$300</div>
+              </div>
+              <div class="quantity">1</div>
+              <div class="returnPrice">$600</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <h1>Pagar</h1>
+          <div class="form">
+            <div class="group">
+              <label for="">Nombre completo</label>
+              <input type="text" name="" id="" />
+            </div>
+            <div class="group">
+              <label for="">Número de celular</label>
+              <input type="text" name="" id="num" />
+            </div>
+            <div class="group">
+              <label for="">Dirección</label>
+              <input type="text" name="" id="dir" />
+            </div>
+            <div class="group">
+              <label for="">Estado</label>
+              <select name="" id="edo">
+                <option value="">Escoja una opción</option>
+                <option value="aguascalientes">Aguascalientes</option>
+                <option value="bajacalifornia">Baja California</option>
+                <option value="bajacaliforniasur">Baja California Sur</option>
+                <option value="campeche">Campeche</option>
+                <option value="chiapas">Chiapas</option>
+                <option value="chihuahua">Chiuahua</option>
+                <option value="cdmx">CDMX</option>
+                <option value="coahuila">Coahuila</option>
+                <option value="colima">Colima</option>
+                <option value="durango">Durango</option>
+                <option value="edomex">Estado de Mexico</option>
+                <option value="guanajuato">Guanajuato</option>
+                <option value="guerrero">Guerrero</option>
+                <option value="hidalgo">Hidalgo</option>
+                <option value="jalisco">Jalisco</option>
+                <option value="michoacan">Michoacan</option>
+                <option value="morelos">Morelos</option>
+                <option value="nayarit">Nayarit</option>
+                <option value="nuevoleon">Nuevo Leon</option>
+                <option value="oaxaca">Oaxaca</option>
+                <option value="puebla">Puebla</option>
+                <option value="queretaro">Queretaro</option>
+                <option value="quintanaroo">Quinatana Roo</option>
+                <option value="sanluis">San Luis Potosi</option>
+                <option value="sinaloa">Sinaloa</option>
+                <option value="sonora">Sonora</option>
+                <option value="tabasco">Tabasco</option>
+                <option value="tamaulipas">Tamaulipas</option>
+                <option value="tlaxcala">Tlaxcala</option>
+                <option value="veracruz">Veracruz</option>
+                <option value="yucatan">Yucatán</option>
+                <option value="zacatecas">Zacatecas</option>
+              </select>
+            </div>
+            <div class="group">
+              <label for="">Alcaldía</label>
+              <select name="" id="alc">
+                <option value="cdmx">Álvaro Obregón</option>
+                <option value="cdmx">Azcapotzalco</option>
+                <option value="cdmx">Benito Juárez</option>
+                <option value="cdmx">Coyoacán</option>
+                <option value="cdmx">Cuajimalpa de Morelos</option>
+                <option value="cdmx">Cuauhtémoc</option>
+                <option value="cdmx">Gustavo A. Madero</option>
+                <option value="cdmx">Iztacalco</option>
+                <option value="cdmx">Iztapalapa</option>
+                <option value="cdmx">La Magdalena Contreras</option>
+                <option value="cdmx">Miguel Hidalgo</option>
+                <option value="cdmx">Milpa Alta</option>
+                <option value="cdmx">Tláhuac</option>
+                <option value="cdmx">Tlalpan</option>
+                <option value="cdmx">Venustiano Carranza</option>
+                <option value="cdmx">Xochimilco</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="return">
+            <div class="row">
+              <div>Cantidad total</div>
+              <div class="totalQuantity">2</div>
+            </div>
+            <div class="row">
+              <div>Total a pagar</div>
+              <div class="totalPrice">$600</div>
+            </div>
+          </div>
+
+          <div></div>
+          <div class="explore-button-container">
+            <button
+              class="buttonCheckout"
+              onclick="window.location.href='https://www.paypal.com/ncp/payment/ZCUQ7LYTNZRUS'"
+            >
+              Pagar
+            </button>
+          </div>
+
+          <!--
+                <button class="buttonCheckout">
+                    Pagar
+                </button>
+                -->
+        </div>
+      </div>
+    </div>
+
+    <script src="../../../../../app-core/src/main/resources/static/js/checkout.js"></script>
+  </body>
+</html>
