@@ -1,1 +1,8 @@
+abstraccion\Decorador_Carrito.class
 controlador\ControllerProductos.class
+abstraccion\IU_CarritoCompras.class
+abstraccion\Carrito.class
+controlador\ControllerProductos$EjemploObjeto.class
+abstraccion\DecoradorC_Pago.class
+abstraccion\GestorDeProductos.class
+abstraccion\DecoradorC_Envio.class
