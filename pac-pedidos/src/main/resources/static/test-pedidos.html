@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Prueba Backend</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 500px; }
+        input, button { 
+            margin: 5px; 
+            padding: 8px;
+            width: 200px;
+            display: block;
+        }
+        .respuesta { margin-top: 20px; padding: 10px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Prueba de Pedidos</h2>
+        
+        <!-- Campos genéricos -->
+        <input type="text" id="campo1" placeholder="Campo 1">
+        <input type="text" id="campo2" placeholder="Campo 2">
+        <button onclick="enviarDatos()">Enviar</button>
+        
+        <!-- Área de respuesta -->
+        <div id="respuesta" class="respuesta"></div>
+    </div>
+
+    <script>
+        async function enviarDatos() {
+            // Obtener valores de los campos
+            const valor1 = document.getElementById('campo1').value;
+            const valor2 = document.getElementById('campo2').value;
+
+            // Crear objeto, que será enviado al backend como JSON
+            const datos = {
+                atributo1: valor1,
+                atributo2: valor2
+            };
+
+            // Enviar al backend
+            try {
+                const response = await fetch('http://localhost:8080/pedidos/test', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(datos) 
+                });
+                
+                document.getElementById('respuesta').innerText = await response.text();
+                
+            } catch (error) {
+                document.getElementById('respuesta').innerText = 'Error: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
